@@ -44,10 +44,12 @@ java Calculator
   
 ## Example
 
--  Enter first number: 10
--  Enter operation (+, -, *, /): +
--  Enter second number: 5
--  Result: 15
+```sh
+Enter first number: 10
+Enter operation (+, -, *, /): +
+Enter second number: 5
+Result: 15
+```
 
 ## Contributing
   Contributions are welcome! 
