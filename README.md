@@ -37,17 +37,17 @@ java Calculator
 ```
 
 ## Usage
-  Enter the first number.
-  Choose the operation (+, -, *, /).
-  Enter the second number.
-  The result will be displayed.
+-  Enter the first number.
+-  Choose the operation (+, -, *, /).
+-  Enter the second number.
+-  The result will be displayed.
   
 ## Example
 
-  Enter first number: 10
-  Enter operation (+, -, *, /): +
-  Enter second number: 5
-  Result: 15
+-  Enter first number: 10
+-  Enter operation (+, -, *, /): +
+-  Enter second number: 5
+-  Result: 15
 
 ## Contributing
   Contributions are welcome! 
