@@ -4,44 +4,43 @@ public class JavaCalculator {
     public static void main(String[] args){
 
         char operator;
-        Double numb1, numb2, result; //create operator
+        double numb1, numb2, result = 0;
 
-        Scanner input = new Scanner(System.in); //create scanner class
+        Scanner input = new Scanner(System.in);
 
-        System.out.println("Choose an operator: +, -, *, /, or %");
-        operator = input.next().charAt(0); // user input for operator
+        System.out.print("Choose an operator: +, -, *, /, ^, or % : ");
+        operator = input.next().charAt(0);
 
-        System.out.println("Enter first number");
-        numb1 = input.nextDouble(); //user input for number 01
+        System.out.print("Enter first number : ");
+        numb1 = input.nextDouble();
 
-        System.out.println("Enter second number");
-        numb2 = input.nextDouble(); //user input for number02
+        System.out.print("Enter second number : ");
+        numb2 = input.nextDouble();
 
         switch (operator){
 
-            case '+': //addition
+            case '+':
                 result = numb1 + numb2;
-                System.out.println(numb1 + "+" + numb2 + "=" + result);
                 break;
 
-            case '-': //subtraction
+            case '-':
                 result = numb1 - numb2;
-                System.out.println(numb1 + "-" + numb2 + "=" + result);
                 break;
 
-            case '*': //multiplication
+            case '*':
                 result = numb1 * numb2;
-                System.out.println(numb1 + "*" + numb2 + "=" + result);
                 break;
 
-            case '/': //division
+            case '/':
                 result = numb1 / numb2;
-                System.out.println(numb1 + "/" + numb2 + "=" + result);
                 break;
 
-            case '%': //percentage
+            case '^':
+                result = Math.pow(numb1, numb2);
+                break;
+
+            case '%':
                 result = numb1 % numb2;
-                System.out.println(numb1 + "%" + numb2 + "=" + result);
                 break;
 
             default:
@@ -49,6 +48,7 @@ public class JavaCalculator {
                 break;
         }
 
+        System.out.println(numb1 + " " + operator + " " + numb2 + " = " + result);
         input.close();
     }
 }
